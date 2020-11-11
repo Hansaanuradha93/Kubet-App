@@ -11,6 +11,7 @@
 		4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE84255C454800FD19F6 /* SceneDelegate.swift */; };
 		4758AE8C255C454900FD19F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8B255C454900FD19F6 /* Assets.xcassets */; };
 		4758AE8F255C454900FD19F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8D255C454900FD19F6 /* LaunchScreen.storyboard */; };
+		4758AEB2255C47D200FD19F6 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AEB1255C47D200FD19F6 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4758AE8B255C454900FD19F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4758AE8E255C454900FD19F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4758AE90255C454900FD19F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4758AEB1255C47D200FD19F6 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,38 @@
 		4758AE81255C454800FD19F6 /* Kubet App */ = {
 			isa = PBXGroup;
 			children = (
+				4758AE9C255C477E00FD19F6 /* Scene */,
+				4758AE9D255C478B00FD19F6 /* Extensions */,
+				4758AE9A255C476200FD19F6 /* Support Files */,
+			);
+			path = "Kubet App";
+			sourceTree = "<group>";
+		};
+		4758AE9A255C476200FD19F6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				4758AE82255C454800FD19F6 /* AppDelegate.swift */,
 				4758AE84255C454800FD19F6 /* SceneDelegate.swift */,
 				4758AE8B255C454900FD19F6 /* Assets.xcassets */,
 				4758AE8D255C454900FD19F6 /* LaunchScreen.storyboard */,
 				4758AE90255C454900FD19F6 /* Info.plist */,
 			);
-			path = "Kubet App";
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		4758AE9C255C477E00FD19F6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		4758AE9D255C478B00FD19F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4758AEB1255C47D200FD19F6 /* UIView+Ext.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +159,7 @@
 			files = (
 				4758AE83255C454800FD19F6 /* AppDelegate.swift in Sources */,
 				4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */,
+				4758AEB2255C47D200FD19F6 /* UIView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
