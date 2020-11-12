@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47081B12255D8FA300D07504 /* KATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B11255D8FA300D07504 /* KATextField.swift */; };
+		47081B17255D8FE800D07504 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B16255D8FE800D07504 /* Constants.swift */; };
 		4758AE83255C454800FD19F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE82255C454800FD19F6 /* AppDelegate.swift */; };
 		4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE84255C454800FD19F6 /* SceneDelegate.swift */; };
 		4758AE8C255C454900FD19F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8B255C454900FD19F6 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47081B11255D8FA300D07504 /* KATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KATextField.swift; sourceTree = "<group>"; };
+		47081B16255D8FE800D07504 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4758AE7F255C454800FD19F6 /* Kubet App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kubet App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4758AE82255C454800FD19F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4758AE84255C454800FD19F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47081B0E255D8F7000D07504 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				47081B10255D8F8C00D07504 /* Text Fields */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		47081B10255D8F8C00D07504 /* Text Fields */ = {
+			isa = PBXGroup;
+			children = (
+				47081B11255D8FA300D07504 /* KATextField.swift */,
+			);
+			path = "Text Fields";
+			sourceTree = "<group>";
+		};
+		47081B15255D8FD600D07504 /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				47081B16255D8FE800D07504 /* Constants.swift */,
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
 		4758AE76255C454800FD19F6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +82,8 @@
 		4758AE81255C454800FD19F6 /* Kubet App */ = {
 			isa = PBXGroup;
 			children = (
+				47081B15255D8FD600D07504 /* Contants */,
+				47081B0E255D8F7000D07504 /* Custom Views */,
 				4758AE9C255C477E00FD19F6 /* Scene */,
 				4758AE9D255C478B00FD19F6 /* Extensions */,
 				4758AE9A255C476200FD19F6 /* Support Files */,
@@ -157,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47081B17255D8FE800D07504 /* Constants.swift in Sources */,
 				4758AE83255C454800FD19F6 /* AppDelegate.swift in Sources */,
+				47081B12255D8FA300D07504 /* KATextField.swift in Sources */,
 				4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */,
 				4758AEB2255C47D200FD19F6 /* UIView+Ext.swift in Sources */,
 			);
