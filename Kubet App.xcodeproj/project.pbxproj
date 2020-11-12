@@ -10,6 +10,7 @@
 		47081B12255D8FA300D07504 /* KATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B11255D8FA300D07504 /* KATextField.swift */; };
 		47081B17255D8FE800D07504 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B16255D8FE800D07504 /* Constants.swift */; };
 		47081B1B255D908500D07504 /* KAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B1A255D908500D07504 /* KAButton.swift */; };
+		47081B20255D90C900D07504 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B1F255D90C900D07504 /* MainVC.swift */; };
 		4758AE83255C454800FD19F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE82255C454800FD19F6 /* AppDelegate.swift */; };
 		4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE84255C454800FD19F6 /* SceneDelegate.swift */; };
 		4758AE8C255C454900FD19F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8B255C454900FD19F6 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		47081B11255D8FA300D07504 /* KATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KATextField.swift; sourceTree = "<group>"; };
 		47081B16255D8FE800D07504 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		47081B1A255D908500D07504 /* KAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAButton.swift; sourceTree = "<group>"; };
+		47081B1F255D90C900D07504 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4758AE7F255C454800FD19F6 /* Kubet App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kubet App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4758AE82255C454800FD19F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4758AE84255C454800FD19F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		47081B1E255D90B300D07504 /* Main  */ = {
+			isa = PBXGroup;
+			children = (
+				47081B1F255D90C900D07504 /* MainVC.swift */,
+			);
+			name = "Main ";
+			sourceTree = "<group>";
+		};
 		4758AE76255C454800FD19F6 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 		4758AE9C255C477E00FD19F6 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				47081B1E255D90B300D07504 /* Main  */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 				47081B12255D8FA300D07504 /* KATextField.swift in Sources */,
 				4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */,
 				4758AEB2255C47D200FD19F6 /* UIView+Ext.swift in Sources */,
+				47081B20255D90C900D07504 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
