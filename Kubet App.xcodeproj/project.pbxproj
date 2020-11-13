@@ -11,6 +11,10 @@
 		47081B17255D8FE800D07504 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B16255D8FE800D07504 /* Constants.swift */; };
 		47081B1B255D908500D07504 /* KAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B1A255D908500D07504 /* KAButton.swift */; };
 		47081B20255D90C900D07504 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47081B1F255D90C900D07504 /* MainVC.swift */; };
+		4735CDC4255EF4DD00B5BCB2 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735CDC3255EF4DD00B5BCB2 /* Bindable.swift */; };
+		4735CDC9255EF52200B5BCB2 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735CDC8255EF52200B5BCB2 /* MainVM.swift */; };
+		4735CDCC255EF7D300B5BCB2 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735CDCB255EF7D300B5BCB2 /* UIColor+Ext.swift */; };
+		4735CDCF255EF83200B5BCB2 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735CDCE255EF83200B5BCB2 /* UIViewController+Ext.swift */; };
 		4758AE83255C454800FD19F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE82255C454800FD19F6 /* AppDelegate.swift */; };
 		4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AE84255C454800FD19F6 /* SceneDelegate.swift */; };
 		4758AE8C255C454900FD19F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8B255C454900FD19F6 /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 		47081B16255D8FE800D07504 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		47081B1A255D908500D07504 /* KAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAButton.swift; sourceTree = "<group>"; };
 		47081B1F255D90C900D07504 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4735CDC3255EF4DD00B5BCB2 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		4735CDC8255EF52200B5BCB2 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		4735CDCB255EF7D300B5BCB2 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		4735CDCE255EF83200B5BCB2 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		4758AE7F255C454800FD19F6 /* Kubet App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kubet App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4758AE82255C454800FD19F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4758AE84255C454800FD19F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +88,17 @@
 			isa = PBXGroup;
 			children = (
 				47081B1F255D90C900D07504 /* MainVC.swift */,
+				4735CDC8255EF52200B5BCB2 /* MainVM.swift */,
 			);
 			name = "Main ";
+			sourceTree = "<group>";
+		};
+		4735CDC2255EF4CD00B5BCB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4735CDC3255EF4DD00B5BCB2 /* Bindable.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		4758AE76255C454800FD19F6 = {
@@ -107,6 +124,7 @@
 				4758AE9C255C477E00FD19F6 /* Scene */,
 				47081B15255D8FD600D07504 /* Contants */,
 				4758AE9D255C478B00FD19F6 /* Extensions */,
+				4735CDC2255EF4CD00B5BCB2 /* Helper */,
 				4758AE9A255C476200FD19F6 /* Support Files */,
 			);
 			path = "Kubet App";
@@ -136,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				4758AEB1255C47D200FD19F6 /* UIView+Ext.swift */,
+				4735CDCB255EF7D300B5BCB2 /* UIColor+Ext.swift */,
+				4735CDCE255EF83200B5BCB2 /* UIViewController+Ext.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -211,9 +231,13 @@
 			files = (
 				47081B17255D8FE800D07504 /* Constants.swift in Sources */,
 				47081B1B255D908500D07504 /* KAButton.swift in Sources */,
+				4735CDC4255EF4DD00B5BCB2 /* Bindable.swift in Sources */,
+				4735CDCF255EF83200B5BCB2 /* UIViewController+Ext.swift in Sources */,
 				4758AE83255C454800FD19F6 /* AppDelegate.swift in Sources */,
+				4735CDC9255EF52200B5BCB2 /* MainVM.swift in Sources */,
 				47081B12255D8FA300D07504 /* KATextField.swift in Sources */,
 				4758AE85255C454800FD19F6 /* SceneDelegate.swift in Sources */,
+				4735CDCC255EF7D300B5BCB2 /* UIColor+Ext.swift in Sources */,
 				4758AEB2255C47D200FD19F6 /* UIView+Ext.swift in Sources */,
 				47081B20255D90C900D07504 /* MainVC.swift in Sources */,
 			);

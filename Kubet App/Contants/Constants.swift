@@ -13,3 +13,12 @@ struct GlobalConstants {
     static let borderWidth: CGFloat = 0.5
     static let borderColor: UIColor = .gray
 }
+
+
+// MARK: - Strings
+struct Strings {
+    static let fullName = "Full Name"
+    static let phoneNumber = "Phone Number"
+    static let register = "Register"
+    static let empty = ""
+}
