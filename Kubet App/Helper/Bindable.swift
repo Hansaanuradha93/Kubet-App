@@ -1,8 +1,16 @@
-//
-//  Bindable.swift
-//  Kubet App
-//
-//  Created by Hansa Anuradha on 11/13/20.
-//
-
 import Foundation
+
+class Bindable<T> {
+    
+    var value: T? {
+        didSet { observer?(value) }
+    }
+    
+    
+    fileprivate var observer: ((T?) -> ())?
+    
+    
+    func bind(observer: @escaping (T?) -> ()) {
+        self.observer = observer
+    }
+}
