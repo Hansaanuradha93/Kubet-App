@@ -17,8 +17,18 @@ struct GlobalConstants {
 
 // MARK: - Strings
 struct Strings {
+    
+    // Placeholders
     static let fullName = "Full Name"
     static let phoneNumber = "Phone Number"
-    static let register = "Register"
     static let empty = ""
+    
+    // Alert
+    static let failed = "Failed"
+    static let successfull = "Successful"
+    static let authenticationSuccessfull = "Authentication successfull"
+    static let somethingWentWrong = "Something Went Wrong, Please Try Again"
+    
+    // Buttons
+    static let register = "Register"
 }
