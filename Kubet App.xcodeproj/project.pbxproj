@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		4758AE8C255C454900FD19F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8B255C454900FD19F6 /* Assets.xcassets */; };
 		4758AE8F255C454900FD19F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4758AE8D255C454900FD19F6 /* LaunchScreen.storyboard */; };
 		4758AEB2255C47D200FD19F6 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4758AEB1255C47D200FD19F6 /* UIView+Ext.swift */; };
+		47C52A762561716F00834CAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C52A752561716F00834CAF /* GoogleService-Info.plist */; };
 		85765FCD2B8110E653E0BC48 /* Pods_Kubet_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656C5D54E78F93F2BFDAD161 /* Pods_Kubet_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		4758AE8E255C454900FD19F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4758AE90255C454900FD19F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4758AEB1255C47D200FD19F6 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		47C52A752561716F00834CAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		656C5D54E78F93F2BFDAD161 /* Pods_Kubet_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kubet_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD08F4A0C3D3683CF0B37806 /* Pods-Kubet App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kubet App.release.xcconfig"; path = "Target Support Files/Pods-Kubet App/Pods-Kubet App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 				4758AE84255C454800FD19F6 /* SceneDelegate.swift */,
 				4758AE8B255C454900FD19F6 /* Assets.xcassets */,
 				4758AE8D255C454900FD19F6 /* LaunchScreen.storyboard */,
+				47C52A752561716F00834CAF /* GoogleService-Info.plist */,
 				4758AE90255C454900FD19F6 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -173,7 +176,6 @@
 				2F20F6763D30E6F5BDAA83CB /* Pods-Kubet App.debug.xcconfig */,
 				FD08F4A0C3D3683CF0B37806 /* Pods-Kubet App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -246,6 +248,7 @@
 			files = (
 				4758AE8F255C454900FD19F6 /* LaunchScreen.storyboard in Resources */,
 				4758AE8C255C454900FD19F6 /* Assets.xcassets in Resources */,
+				47C52A762561716F00834CAF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
