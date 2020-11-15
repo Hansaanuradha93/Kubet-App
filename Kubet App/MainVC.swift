@@ -76,8 +76,10 @@ fileprivate extension MainVC {
             guard let self = self else { return }
             if status {
                 print(message)
+                // Go to the url
             } else {
                 print(message)
+                // TODO: add alert to the user
             }
         }
     }
@@ -100,6 +102,15 @@ fileprivate extension MainVC {
                 self.registerButton.setTitleColor(.gray, for: .disabled)
             }
             self.registerButton.isEnabled = isFormValid
+        }
+        
+        viewModel.bindableIsRegistering.bind { [weak self] isRegistering in
+            guard let self = self, let isRegistering = isRegistering else { return }
+            if isRegistering {
+                self.showPreloader()
+            } else {
+                self.hidePreloader()
+            }
         }
     }
     
