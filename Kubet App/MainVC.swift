@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 class MainVC: UIViewController {
     
@@ -39,7 +40,7 @@ class MainVC: UIViewController {
 fileprivate extension MainVC {
     
     @objc func handleRegister() {
-        print("Register")
+        registerUser()
     }
     
     
@@ -69,6 +70,18 @@ fileprivate extension MainVC {
 
 // MARK: - Fileprivate Methods
 fileprivate extension MainVC {
+    
+    func registerUser() {
+        viewModel.registerUser { [weak self] status, message in
+            guard let self = self else { return }
+            if status {
+                print(message)
+            } else {
+                print(message)
+            }
+        }
+    }
+    
     
     func setupNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
