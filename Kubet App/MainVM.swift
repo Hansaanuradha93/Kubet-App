@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 final class MainVM {
     
@@ -10,6 +11,28 @@ final class MainVM {
     // MARK: Bindlable
     var bindalbeIsFormValid = Bindable<Bool>()
     var bindableIsRegistering = Bindable<Bool>()
+}
+
+
+// MARK: - Public Methods
+extension MainVM {
+    
+    func registerUser(completion: @escaping (Bool, String) -> ()) {
+        guard let fullName = fullName, let phoneNumber = phoneNumber else { return }
+        bindableIsRegistering.value = true
+        
+        Auth.auth().signInAnonymously() { [weak self] authResult, error in
+            guard let self = self else { return }
+            self.bindableIsRegistering.value = false
+            
+            if let error = error {
+                completion(false, error.localizedDescription)
+                return
+            }
+            
+            completion(true, "Registering successful")
+        }
+    }
 }
 
 
