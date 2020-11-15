@@ -74,6 +74,8 @@ fileprivate extension MainVC {
     func registerUser() {
         viewModel.registerUser { [weak self] status, message in
             guard let self = self else { return }
+            self.resetScreen()
+            
             if status {
                 print(message)
                 // Go to the url
@@ -82,6 +84,15 @@ fileprivate extension MainVC {
                 // TODO: add alert to the user
             }
         }
+    }
+    
+    
+    func resetScreen() {
+        viewModel.fullName = ""
+        viewModel.phoneNumber = ""
+        
+        fullNameLabel.text = ""
+        phoneNumberLabel.text = ""
     }
     
     
