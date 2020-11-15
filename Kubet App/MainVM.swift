@@ -18,19 +18,18 @@ final class MainVM {
 extension MainVM {
     
     func registerUser(completion: @escaping (Bool, String) -> ()) {
-        guard let fullName = fullName, let phoneNumber = phoneNumber else { return }
         bindableIsRegistering.value = true
         
         Auth.auth().signInAnonymously() { [weak self] authResult, error in
             guard let self = self else { return }
-            self.bindableIsRegistering.value = false
             
             if let error = error {
+                self.bindableIsRegistering.value = false
                 completion(false, error.localizedDescription)
                 return
             }
             
-            completion(true, "Registering successful")
+            self.saveUserInfoToFirestore(completion: completion)
         }
     }
 }
@@ -38,6 +37,28 @@ extension MainVM {
 
 // MARK: - Fileprivate Methods
 fileprivate extension MainVM {
+    
+    func saveUserInfoToFirestore(completion: @escaping (Bool, String) -> ()) {
+        let uid = Auth.auth().currentUser?.uid ?? ""
+        let userInfo = [
+            "uid": uid,
+            "fullName": fullName ?? "",
+            "phoneNumber": phoneNumber ?? ""
+            ] as [String : Any]
+                
+        Firestore.firestore().collection("kubet_users").addDocument(data: userInfo) { [weak self] error in
+            guard let self = self else { return }
+            self.bindableIsRegistering.value = false
+            
+            if let error = error {
+                print(error.localizedDescription)
+                completion(false, Strings.somethingWentWrong)
+                return
+            }
+            completion(true, Strings.authenticationSuccessfull)
+        }
+    }
+    
     
     func checkFormValidity() {
         let isFormValid = fullName?.isEmpty == false && phoneNumber?.isEmpty == false && phoneNumber?.count ?? 0 >= 9
