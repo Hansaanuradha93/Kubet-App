@@ -2,6 +2,16 @@ import UIKit
 
 extension UIViewController {
     
+    func presentAlertOnMainTread(title: String, message: String, buttonTitle: String, action: ((_ alertAction: UIAlertAction) -> Void)? = nil) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: buttonTitle, style: .default, handler: action)
+            alert.addAction(action)
+            self.present(alert, animated: true)
+        }
+    }
+    
+    
     func showPreloader() {
         let backgroundView = UIView()
         backgroundView.backgroundColor = .black
