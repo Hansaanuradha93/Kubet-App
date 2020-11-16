@@ -6,6 +6,7 @@ final class MainVM {
     // MARK: Properties
     var fullName: String? { didSet { checkFormValidity() } }
     var phoneNumber: String? { didSet { checkFormValidity() } }
+    var urlString: String? = "https://www.google.com" // TODO: fetch the correct url from firebase and replace this dummy value
     
     
     // MARK: Bindlable

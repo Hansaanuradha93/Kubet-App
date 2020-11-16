@@ -1,5 +1,6 @@
 import UIKit
 import Firebase
+import SafariServices
 
 class MainVC: UIViewController {
     
@@ -77,11 +78,21 @@ fileprivate extension MainVC {
             self.resetScreen()
             
             if status {
-                print(message)
-                // Go to the url
+                self.presentSafariVC(with: self.viewModel.urlString ?? "")
             } else {
                 self.presentAlertOnMainTread(title: Strings.failed, message: message, buttonTitle: Strings.ok)
             }
+        }
+    }
+    
+    
+    func presentSafariVC(with urlString: String) {
+        if let url = URL(string: urlString) {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+
+            let vc = SFSafariViewController(url: url, configuration: config)
+            present(vc, animated: true)
         }
     }
     
