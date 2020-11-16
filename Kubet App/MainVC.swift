@@ -80,8 +80,7 @@ fileprivate extension MainVC {
                 print(message)
                 // Go to the url
             } else {
-                print(message)
-                // TODO: add alert to the user
+                self.presentAlertOnMainTread(title: Strings.failed, message: message, buttonTitle: Strings.ok)
             }
         }
     }
