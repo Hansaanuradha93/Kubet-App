@@ -31,4 +31,5 @@ struct Strings {
     
     // Buttons
     static let register = "Register"
+    static let ok = "Ok"
 }
